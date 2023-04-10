@@ -96,7 +96,7 @@ body {
 .gallery__left img{
 	border-radius: 20px;
 	/* border: 1px solid #e1e1e4; */
-	box-shadow: 0 0 60px 0 rgb(104, 129, 255);
+	box-shadow: 0 0 50px 0 rgba(255, 104, 104, 0.5);
 }
 
 .gallery__right .gallery__item {
@@ -107,7 +107,7 @@ body {
 .gallery__right img{
 	border-radius: 20px;
 	/* border: 1px solid #e1e1e4; */
-	box-shadow: 0 0 50px 0 rgb(104, 129, 255);
+	box-shadow: 0 0 50px 0 rgba(255, 104, 104, 0.5);
 }
 
 .text-block {
@@ -160,10 +160,10 @@ body {
 }
 
   .Wand img {
-    position: absolute;
-    transform: translate(0%, -50%) scale(0);
-    top: 55%;
-	box-shadow: 0 0 50px 0 rgba(104, 129, 255, 0.466);
+		position: absolute;
+		transform: translate(0%, -50%) scale(0);
+		top: 55%;
+		box-shadow: 0 0 25px 0 rgba(255, 104, 104, 0.25);
 }
 .img1{
     left: 1%;
@@ -204,4 +204,28 @@ body {
     height: 50%;
     border-radius: 20px;
 
+}
+
+
+.anim {
+   height: 100vh;
+   position: relative;
+   overflow: hidden;
+}
+
+.magic-point {
+   width: 300px;
+   height: auto;
+   position: absolute;
+   top: -30px;
+   left: 200px;
+}
+
+.wand {
+   width: 300px;
+   height: auto;
+   position: absolute;
+   top: 0;
+   left: 0;
+   rotate: 30deg;
 }
