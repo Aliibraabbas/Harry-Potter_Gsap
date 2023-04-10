@@ -12,7 +12,18 @@ const magicPath = {
       {x: 150, y: 130},
       {x: 100, y: 580},
       {x: 890, y: 180},
-      {x: 200, y: 200},
+      {x: 200, y: 200, scale: 100},
+   ]
+}
+
+const magicscale = {
+   values: [
+      {scale: 100},
+   ]
+}
+const magicop = {
+   values: [
+      {opacity: 0}
    ]
 }
 
@@ -24,6 +35,19 @@ tween.add(
       ease: Power1.easeInOut
    })
 );
+tween.add(
+   TweenLite.to('.magic-point', 1, {
+      bezier: magicscale,
+      ease: Power1.easeInOut
+   })
+);
+tween.add(
+   TweenLite.to('.magic-point', 1, {
+      bezier: magicop,
+      ease: Power1.easeInOut
+   })
+);
+
 
 const controller = new ScrollMagic.Controller();
 const scene = new ScrollMagic.Scene({
